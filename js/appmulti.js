@@ -33,7 +33,6 @@
 ==============================================================================*/
 
 
-
 // midi out select modal
 var $midiOutModal=$("#midiOutSelM").modal({
 show: false
@@ -197,13 +196,14 @@ function scb(access){
         mo.options[i]=new Option(outputs[i]["name"],i);
     }
 
-/*
+
     var mo=document.getElementById("midiOutSel2");
     for(var i=0; i<outputs.length; i++){
         // in modal
         mo.options[i]=new Option(outputs[i]["name"],i);
     }
-    
+
+/*    
     var mo=document.getElementById("midiOutSel3");
     for(var i=0; i<outputs.length; i++){
         // in modal
@@ -231,7 +231,7 @@ function scb(access){
         
         
     });
-/*
+
     document.getElementById("midiOutSelB2").addEventListener("click",function(){
         var selIdx=document.getElementById("midiOutSel2").selectedIndex;
         
@@ -250,7 +250,8 @@ function scb(access){
         }
        
     });
-    
+
+/*    
     document.getElementById("midiOutSelB3").addEventListener("click",function(){
         var selIdx=document.getElementById("midiOutSel3").selectedIndex;
         
@@ -263,9 +264,9 @@ function scb(access){
         
         $("#midiOutSelM3").modal("hide");
         
-        var sysEx=nsx3.getSysExByText(LiVo._current);
+        var sysEx=nsx1.getSysExByText(LiVo._current);
         for(var i=0;i<sysEx.length;++i){
-            mOut.send(sysEx[i]);
+            mOut3.send(sysEx[i]);
         }
 
      
