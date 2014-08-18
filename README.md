@@ -13,8 +13,6 @@ WARRANTIES, see the file, "LICENSE," in this distribution.
 
 See http://www.yamo-n.org/livo for more information. 
 
-This project uses modified version of Ooura's FFT code(http://www.kurims.kyoto-u.ac.jp/~ooura/index.html). 
-
 
 Contact
 --------------------
